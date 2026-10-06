@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bruno Radiadores — empresa importadora de radiadores y productos asociados.">
+  <meta name="theme-color" content="#0a9b35">
+  <title>Bruno Radiadores | Catálogo</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Radiadores y productos asociados</span>
+      <a class="wa-mini" href="https://wa.me/59894814519" target="_blank" rel="noopener">
+        <span class="wa-icon">◉</span> WhatsApp: +598 94 814 519
+      </a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Bruno Radiadores inicio">
+        <img src="assets/logo.png" alt="Bruno Radiadores">
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn whatsapp" href="https://wa.me/59894814519?text=Hola%20Bruno%20Radiadores%2C%20quisiera%20consultar%20por%20un%20producto." target="_blank" rel="noopener">
+          <span>WhatsApp</span>
+        </a>
+        <button class="cart-button" id="openCart" aria-label="Abrir carrito">
+          <span class="cart-symbol">🛒</span>
+          <span>Carrito</span>
+          <b id="cartCount">0</b>
+        </button>
+        <button class="menu-button" id="menuButton" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Bruno Radiadores</div>
+          <h1>Radiadores y soluciones para tu vehículo.</h1>
+          <p>Encontrá el producto que necesitás, agregalo al carrito y enviá tu consulta directamente por WhatsApp.</p>
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn primary">Ver catálogo</a>
+            <a href="https://wa.me/59894814519?text=Hola%20Bruno%20Radiadores%2C%20necesito%20asesoramiento." target="_blank" rel="noopener" class="btn outline">Consultar por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-logo">
+          <div class="logo-card">
+            <img src="assets/logo.png" alt="Logo Bruno Radiadores">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Catálogo</div>
+            <h2>Productos</h2>
+            <p>Seleccioná los productos que querés consultar.</p>
+          </div>
+          <div class="search-wrap">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="6.8"></circle>
+              <path d="M16.2 16.2L21 21"></path>
+            </svg>
+            <input id="searchInput" type="search" placeholder="Buscar producto por nombre..." aria-label="Buscar producto por nombre" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="Todos">Todos</button>
+          <button class="filter" data-category="Radiadores">Radiadores</button>
+          <button class="filter" data-category="Refrigeración">Refrigeración</button>
+          <button class="filter" data-category="Accesorios">Accesorios</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <strong>No encontramos productos.</strong>
+          <span>Probá con otro nombre, código o categoría.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-mark"><img src="assets/logo-b.png" alt="Bruno Radiadores"></div>
+        <div>
+          <div class="eyebrow">Sobre nosotros</div>
+          <h2>Empresa importadora de radiadores y productos asociados.</h2>
+          <p>Trabajamos para ofrecer productos de refrigeración y atención personalizada, facilitando la consulta y selección de cada pieza desde nuestro catálogo.</p>
+          <div class="about-points">
+            <div><b>01</b><span>Catálogo organizado y fácil de consultar.</span></div>
+            <div><b>02</b><span>Atención directa por WhatsApp.</span></div>
+            <div><b>03</b><span>Consultas de productos desde el carrito.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container contact-card">
+        <div>
+          <div class="eyebrow">Contacto</div>
+          <h2>¿Necesitás asesoramiento?</h2>
+          <p>Escribinos y te ayudamos a encontrar el producto adecuado.</p>
+        </div>
+        <div class="contact-details">
+          <a href="https://wa.me/59894814519" target="_blank" rel="noopener">
+            <span class="detail-icon">◉</span>
+            <span><small>WhatsApp</small><strong>+598 94 814 519</strong></span>
+          </a>
+          <a href="mailto:correo@tudominio.com">
+            <span class="detail-icon">✉</span>
+            <span><small>Correo electrónico</small><strong>correo@tudominio.com</strong></span>
+          </a>
+        </div>
+      </div>
+      <p class="email-note">El correo mostrado es provisional y puede reemplazarse fácilmente por el definitivo.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="Bruno Radiadores">
+      <span>© <span id="year"></span> Bruno Radiadores. Todos los derechos reservados.</span>
+      <a href="#catalogo">Volver al catálogo ↑</a>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" hidden>
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-head">
+        <div><span class="eyebrow">Tu selección</span><h2 id="cartTitle">Carrito</h2></div>
+        <button id="closeCart" class="close-button" aria-label="Cerrar">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty">
+        <span>🛒</span>
+        <strong>Tu carrito está vacío</strong>
+        <p>Agregá productos del catálogo para preparar tu consulta.</p>
+      </div>
+      <div class="cart-foot">
+        <div class="cart-summary"><span>Productos</span><strong id="cartTotalItems">0</strong></div>
+        <button class="btn primary full" id="sendCart">Enviar selección por WhatsApp</button>
+        <button class="clear-cart" id="clearCart">Vaciar carrito</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
